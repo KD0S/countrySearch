@@ -15,7 +15,6 @@ const SingleDisplay = ({data}) => {
     axios.get(`${baseUrl}q=${data[0].capital[0]}&appid=${apiKey}`).then(
       response => setWeather(response.data)
     )
-    console.log(apiKey)
   }
    
 
@@ -41,7 +40,6 @@ const SingleDisplay = ({data}) => {
   
 
   else{
-    console.log('render')
     return (
         <div>
         <h1>{data[0].name.common}</h1>
