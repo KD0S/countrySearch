@@ -15,6 +15,7 @@ const SingleDisplay = ({data}) => {
     axios.get(`${baseUrl}q=${data[0].capital[0]}&appid=${apiKey}`).then(
       response => setWeather(response.data)
     )
+    console.log(apiKey)
   }
    
 
