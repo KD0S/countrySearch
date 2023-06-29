@@ -27,7 +27,7 @@ const App = () => {
 
 
    return (
-     <div>
+     <div className="main">
          <label>Find Countries</label>
          <input onChange={searchHandler}>
          </input>
