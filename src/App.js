@@ -28,9 +28,11 @@ const App = () => {
 
    return (
      <div className="main">
+         <div className="header">
          <label>Find Countries</label>
-         <input onChange={searchHandler}>
+         <input style={{flex : 0.8}} onChange={searchHandler}>
          </input>
+         </div>
          {
             countryDetails ? 
             countryDetails.length === 1 ?

@@ -45,7 +45,7 @@ const SingleDisplay = ({data}) => {
 
   else{
     return (
-        <div>
+        <div className='countryDisplay'>
         <h1>{data[0].name.common}</h1>
         <div className='details'>
           <div className='data'>
